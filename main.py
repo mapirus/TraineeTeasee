@@ -2,9 +2,10 @@ import thecampy
 import discord
 import re
 from discord.ext import commands
-from to import code
 import requests
+import os
 
+code = os.environ['BOT_TOKEN']
 bot = commands.Bot(command_prefix='!')
 p = re.compile('[^/]+/[^/]+/[^/]+')
 
